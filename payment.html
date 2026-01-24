@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenZ Garden Restaurant</title>
+</head>
+
+<body style="background-color:lightsteelblue;
+             background-image:url('background.jpg..png');
+             background-size:cover;
+             background-repeat:no-repeat;
+             margin:0;
+             padding:0;">
+
+  <!-- HERO / PAYMENT SECTION -->
+  <div style="
+    display:flex;
+    align-items:center;
+    gap:60px;
+    background:rgba(255,255,255,0.45);
+    border-radius:30px;
+    padding:40px 50px;
+    margin:60px auto 30px;
+    max-width:1100px;
+  ">
+
+    <!-- LOGO -->
+    <img src="logo.png"
+         alt="GenZ Garden Restaurant Logo"
+         style="width:170px;height:auto;">
+
+    <!-- TEXT -->
+    <div style="max-width:520px;">
+
+      <h1 style="
+        margin:0;
+        font-size:36px;
+        color:rgb(8,51,88);
+        font-style:italic;
+      ">
+        Trust the process, <br> Enjoy the meal.
+      </h1>
+
+      <p style="
+        margin-top:12px;
+        font-size:18px;
+        color:#355f5f;
+      ">
+        Safe • Fast • Made for you
+      </p>
+
+    </div>
+  </div>
+
+  <!-- PAYMENT + OPTIONS (CENTERED BLOCK) -->
+  <div style="
+    margin:0 auto;
+    max-width:400px;
+    text-align:center;
+    background:rgba(255,255,255,0.55);
+    padding:30px;
+    border-radius:20px;
+  ">
+
+    <h2 style="
+      margin-bottom:25px;
+      text-decoration:underline;
+      color:#083358;
+    ">
+      Payment
+    </h2>
+
+    <!-- OPTIONS -->
+    <div style="
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      font-size:18px;
+      color:#083358;
+    ">
+
+      <label style="cursor:pointer;">
+        <input type="radio" name="payment" onclick="showDone()" style="margin-right:10px;">
+        💵 Cash
+      </label>
+
+      <label style="cursor:pointer;">
+        <input type="radio" name="payment" onclick="showDone()" style="margin-right:10px;">
+        📱 UPI
+      </label>
+
+      <label style="cursor:pointer;">
+        <input type="radio" name="payment" onclick="showDone()" style="margin-right:10px;">
+        💳 Card
+      </label>
+
+    </div>
+
+    <!-- PAYMENT DONE BUTTON -->
+    <div id="doneBox" style="display:none; margin-top:30px;">
+      <button onclick="goHome()" style="
+        padding:12px 30px;
+        font-size:18px;
+        border:none;
+        border-radius:25px;
+        background:#083358;
+        color:white;
+        cursor:pointer;
+      ">
+        ✔ Payment Done
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    function showDone() {
+      document.getElementById("doneBox").style.display = "block";
+    }
+
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <!-- FOOTER -->
+  <footer style="
+    margin-top:60px;
+    padding:25px 0;
+    text-align:center;
+    font-size:14px;
+    color:#2f4f4f;
+    background:rgba(255,255,255,0.45);
+  ">
+
+    <p style="margin:6px 0;font-size:16px;">
+      📞 Phone: +91 9XXXXXXXXX
+    </p>
+
+    <p style="margin:6px 0;">
+      ✉️ Email: genzgardenrestaurant@gmail.com
+    </p>
+
+    <p style="margin:6px 0;">
+      📍 27, Janpath Road, Bhubaneswar, Odisha, India – 751013
+    </p>
+
+    <p style="margin-top:10px; font-size:12px; opacity:0.8;">
+      © 2026 GenZ Garden Restaurant · All rights reserved
+    </p>
+
+  </footer>
+
+</body>
+</html>
